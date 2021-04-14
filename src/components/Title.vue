@@ -14,20 +14,17 @@ export default {
 <style scoped>
 .title {
   display: flex;
-    align-items: center;
+  align-items: center;
   background-color: #2CABE0;
-  /* border: 5px solid black; */
 }
 h1{
   font-family: "Helvetica Neue",Helvetica;
   color: white;
-  /* border: 5px solid black; */
-  margin-left: 150px;
+  margin-left: 170px;
 }
 img{
   position: absolute;
   height: 100px;
-  width: 150px;
-  /* border: 5px solid black; */
+  width: 170px;
 }
 </style>

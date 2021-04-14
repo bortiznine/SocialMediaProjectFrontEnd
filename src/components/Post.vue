@@ -1,6 +1,7 @@
 <template>
   <article>
     <PostHeader v-bind:post="post"/>
+    <ReactionsHeader v-bind:post="post" />
     <PostBody v-bind:post="post"/>
     <Comments v-bind:comments="post.comments"/>
   </article>
@@ -8,14 +9,16 @@
 
 <script>
 import PostHeader from "@/components/PostHeader";
+import ReactionsHeader from "@/components/ReactionsHeader";
 import PostBody from "@/components/PostBody";
 import Comments from "@/components/Comments";
 
 export default {
   name: 'Post',
-  components: {PostHeader, PostBody, Comments},
+  components: {PostHeader, ReactionsHeader, PostBody, Comments},
   props: {
     post: Object,
+    reactionsId: Object
   }
 }
 </script>
