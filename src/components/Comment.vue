@@ -25,11 +25,12 @@ export default {
     display: flex;
     flex-direction: row;
   }
-  .profile-pic img {
+  .profile-pic {
     display: flex;
     justify-content: inherit;
     align-items: center;
-    border: 3px solid black;
+  }
+  .profile-pic img {
     width: 65px;
     height: auto;
   }
