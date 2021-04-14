@@ -15,6 +15,7 @@ export default {
   components: {CommentBody},
   props: {
     comment: Object,
+    
   }
 }
 </script>
@@ -25,6 +26,10 @@ export default {
     flex-direction: row;
   }
   .profile-pic img {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    border: 3px solid black;
     width: 65px;
     height: auto;
   }
