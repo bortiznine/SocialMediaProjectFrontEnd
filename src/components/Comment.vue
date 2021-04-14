@@ -15,7 +15,10 @@ export default {
   components: {CommentBody},
   props: {
     comment: Object,
-    
+    defaultPicture: {
+      type: String,
+      default: "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png",
+    },
   }
 }
 </script>
