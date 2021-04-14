@@ -35,6 +35,8 @@ export default {
     .reactions-flex {
         display: flex;
         justify-content: space-around;
+      background-color: #4d73e8;
+      color: white;
     }
     .emoji {
         font-size: 20px;
