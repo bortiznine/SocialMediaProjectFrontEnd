@@ -44,7 +44,7 @@ export default {
     .number {
         display: flex;
         justify-content: center;
-        padding-top: 10px;
+        padding-top: 7px;
         font-size: 20px;
     }
 </style>
