@@ -28,6 +28,14 @@ export default {
 </script>
 
 <style>
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(235, 235, 235);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -48,4 +56,11 @@ h2 {
 h3 {
   font-size: 1.6em;
 }
+
+  .comment:nth-child(odd) {
+      background: #a6ccf7;
+  }
+  .comment:nth-child(even) {
+      background: #6299d8;
+  }
 </style>

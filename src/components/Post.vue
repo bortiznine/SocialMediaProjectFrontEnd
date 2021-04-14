@@ -1,19 +1,19 @@
 <template>
   <article>
     <PostHeader v-bind:post="post"/>
-    <div class="flex-row">
-      <h3>{{post.title}}</h3>
-      <p class="content">{{post.content}}</p>
-    </div>
+    <PostBody v-bind:post="post"/>
+    <Comments v-bind:comments="post.comments"/>
   </article>
-
 </template>
 
 <script>
 import PostHeader from "@/components/PostHeader";
+import PostBody from "@/components/PostBody";
+import Comments from "@/components/Comments";
+
 export default {
   name: 'Post',
-  components: {PostHeader},
+  components: {PostHeader, PostBody, Comments},
   props: {
     post: Object,
   }
@@ -23,22 +23,13 @@ export default {
 <style scoped>
   article {
     margin: 0 auto;
-    width: 600px;
+    width: 650px;
   }
-  img {
-    width: 50px;
-    height: auto;
-  }
-  .flex-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #CDCDCD;
-    margin-bottom: 4em;
-    flex: 0 0 50%;
-  }
-  .content {
-    padding: 1em;
-  }
+</style>
 
+<style scoped>
+  article {
+    border: 1px solid rgb(39, 39, 39);
+    margin-bottom: 5em;
+  }
 </style>
