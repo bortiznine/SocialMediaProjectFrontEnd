@@ -3,7 +3,7 @@
       <div class="profile-pic">
         <img v-bind:src="post.user.picture ? post.user.picture : defaultPicture"  alt=""/>
       </div>
-      <p class="username">{{ post.user.username }}</p>
+      <h2 class="username">{{ post.user.username }}</h2>
       <p class="date">Date posted: {{ dateTimeFormatter(post.date) }}</p>
     </header>
 </template>
@@ -41,9 +41,21 @@ export default {
   .profile-pic img {
     width: 80px;
     height: auto;
+        display: flex;
+    justify-content: inherit;
+    align-items: center;
   }
   .username {
     font-weight: 600;
     color: #4d73e8;
+    margin: 0 30px;
+        display: flex;
+    justify-content: inherit;
+    align-items: center;
+  }
+  .date {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
   }
 </style>
