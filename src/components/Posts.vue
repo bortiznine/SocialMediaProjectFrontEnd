@@ -21,3 +21,9 @@ export default {
 
 }
 </script>
+
+<style scope>
+  .all-posts {
+    margin-top: 6em;
+  }
+</style>

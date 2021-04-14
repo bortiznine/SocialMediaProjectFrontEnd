@@ -1,7 +1,7 @@
 <template>
  <div>
   <Title :title="title"/>
-  <Posts :posts="posts" />
+  <Posts class="all-posts" :posts="posts" />
  </div>
 </template>
 
