@@ -30,6 +30,7 @@ export default {
 <style scoped>
   header {
     display: flex;
+    padding: 20px 0;
     flex-direction: row;
     justify-content: center;
     border-bottom: 1px solid #000;
@@ -41,7 +42,7 @@ export default {
   .profile-pic img {
     width: 80px;
     height: auto;
-        display: flex;
+    display: flex;
     justify-content: inherit;
     align-items: center;
   }
