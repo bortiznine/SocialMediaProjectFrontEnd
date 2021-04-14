@@ -1,14 +1,18 @@
 <template>
+ <div>
+  <Title :title="title"/>
   <Posts :posts="posts" />
+ </div>
 </template>
 
 <script>
 import Posts from "@/components/Posts";
+import Title from "@/components/Title";
 
 export default {
   name: 'App',
   components: {
-    Posts,
+    Posts, Title
   },
   data() {
     return {
