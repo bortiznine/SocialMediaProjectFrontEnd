@@ -32,4 +32,7 @@ export default {
     flex: 0 0 50%;
     padding: 1em;
   }
+  .content {
+    font-size: 1.1em;
+  }
 </style>

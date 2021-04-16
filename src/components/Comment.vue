@@ -34,7 +34,7 @@ export default {
     align-items: center;
   }
   .profile-pic img {
-    width: 65px;
+    width: 100px;
     height: auto;
   }
 </style>

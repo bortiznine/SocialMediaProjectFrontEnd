@@ -1,10 +1,12 @@
 <template>
-    <header class="flex">
+    <header>
       <div class="profile-pic">
         <img v-bind:src="post.user.picture ? post.user.picture : defaultPicture"  alt=""/>
       </div>
-      <h2 class="username">{{ post.user.username }}</h2>
-      <p class="date">Date posted: {{ dateTimeFormatter(post.date) }}</p>
+      <div class="flex">
+        <h2 class="username">{{ post.user.username }}</h2>
+        <p class="date">{{ dateTimeFormatter(post.date) }}</p>
+      </div>
     </header>
 </template>
 
@@ -40,7 +42,7 @@ export default {
     margin-right: 20px;
   }
   .profile-pic img {
-    width: 80px;
+    width: 130px;
     height: auto;
     display: flex;
     justify-content: inherit;
@@ -50,13 +52,15 @@ export default {
     font-weight: 600;
     color: #4d73e8;
     margin: 0 30px;
-        display: flex;
-    justify-content: inherit;
-    align-items: center;
   }
   .date {
+    font-size: 15px;
+    margin: 0.5em 0;
+  }
+  .flex {
     display: flex;
-    justify-content: inherit;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 </style>
